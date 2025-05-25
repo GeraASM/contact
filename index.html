@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <link rel="stylesheet" href="./styles/index.css">
+        <title>Frontend Mentor | Contact form</title>
+
+    </head>
+    <body>
+        <main class="main">
+            <div class="container">
+                <form action="" id="form" novalidate>
+                    <h1 class="contact__title">Contact Us</h1>
+                    <div class="part part-name">
+                        <div>
+                            <label class="headland" for="firstname">First Name<small class="required"> *</small></label>
+                            <input class="over error-input" type="text" name="first-name" id="firstname" aria-invalid="true" autocomplete="given-name">
+                            <span class="error" aria-hidden="true">This field is required</span>
+                        </div>
+                        <div>
+                            <label class="headland" for="lastname">Last Name<small class="required"> *</small></label>
+                            <input class="over" type="text" name="last-name" id="lastname" aria-invalid="true" autocomplete="family-name">
+                            <span class="error" aria-hidden="true">This field is required</span>
+                        </div>
+                    </div>
+                    <div class="part part-email">
+                        <label class="headland" for="email">Email Address<small class="required"> *</small></label>
+                        <input class="over" type="email" name="email" id="email" aria-invalid="true" autocomplete="email"  tabindex="0">
+                        <span class="error" aria-hidden="true">This field is required</span>
+                    </div>
+                    <div class="part">
+                        <p class="headland">Query Type<small class="required"> *</small></p>
+                        <ul class="part-query">
+                            <li class="over">
+                                <input type="radio" name="queryType" id="enquiry" tabindex="0">
+                                <label class="query-text" for="enquiry">General Enquiry</label>    
+                            </li>
+                            <li class="over">
+                                <input type="radio" name="queryType" id="request"  tabindex="0">
+                                <label class="query-text" for="request">Support Request</label>
+                            </li>
+                        </ul>
+                        <span class="error">Please select a query type</span>
+                    </div>
+                    <div class="part part-message">
+                        <label class="headland" for="message">Message <small class="required"> *</small></label>
+                        <textarea class="over" name="message" id="message"></textarea>
+                        <span class="error">This field is required</span>
+                    </div>
+                    <div class="part part-consent">
+                        <input type="checkbox" name="consent" id="consent" checked>
+                        <label class="consent-h" class="headland" for="consent">I consent to being contacted by the team<small class="required"> *</small></label>
+                    </div>
+                    <button type="submit" class="send"  tabindex="0">Submit</button>
+                </form>
+                <div class="message-sent">
+                    <div class="message-block">
+                        <img src="./assets/images/icon-success-check.svg" alt="Success">
+                        <p class="message__title">Message Sent!</p>
+                    </div>
+                    <p class="message__text">Thanks for completing the form. We'll be in touch soon!</p>
+                </div>
+            </div>
+        </main>
+        <script defer src="./js/script.js"></script>
+    <!-- 
+    Contact Us
+
+    First Name
+    
+
+    Last Name
+    This field is required
+
+    Email Address
+    Please enter a valid email address
+    This field is required
+
+    Query Type
+    General Enquiry
+    Support Request
+    
+
+    Message
+    T
+
+    To submit this form, please consent to being contacted
+
+    Submit
+
+    Message Sent!
+     -->
+    </body>
+</html>
