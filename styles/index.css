@@ -255,6 +255,10 @@ input[type='radio']:checked {
     margin-top: var(--spacing-200);
 }
 
+.part-last {
+    margin: var(--spacing-200) 0;
+}
+
 /* Se agrega cuando se selecciona un radio */
 .over--active {
     outline: 1px solid var(--clr-grey-600);
@@ -277,6 +281,10 @@ input[type='radio']:checked {
 
 
 @media screen and (min-width: 768px) {
+    #form {
+        padding: var(--spacing-500);
+    }
+
     .container {
         margin-top: 128px;
     }
