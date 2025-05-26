@@ -17,7 +17,7 @@
                     <div class="part part-name">
                         <div>
                             <label class="headland" for="firstname">First Name<small class="required"> *</small></label>
-                            <input class="over error-input" type="text" name="first-name" id="firstname" aria-invalid="true" autocomplete="given-name">
+                            <input class="over" type="text" name="first-name" id="firstname" aria-invalid="true" autocomplete="given-name">
                             <span class="error" aria-hidden="true">This field is required</span>
                         </div>
                         <div>
@@ -43,16 +43,19 @@
                                 <label class="query-text" for="request">Support Request</label>
                             </li>
                         </ul>
-                        <span class="error">Please select a query type</span>
+                        <span class="error error-radio">Please select a query type</span>
                     </div>
                     <div class="part part-message">
                         <label class="headland" for="message">Message <small class="required"> *</small></label>
-                        <textarea class="over" name="message" id="message"></textarea>
-                        <span class="error">This field is required</span>
+                        <textarea class="over" name="message" id="message" aria-invalid="true"></textarea>
+                        <span class="error" aria-hidden="true">This field is required</span>
                     </div>
-                    <div class="part part-consent">
-                        <input type="checkbox" name="consent" id="consent" checked>
-                        <label class="consent-h" class="headland" for="consent">I consent to being contacted by the team<small class="required"> *</small></label>
+                    <div class="part">
+                        <div class="part-consent">
+                            <input type="checkbox" name="consent" id="consent">
+                            <label class="consent-h" class="headland" for="consent">I consent to being contacted by the team<small class="required"> *</small></label>
+                        </div>
+                        <span class="error">To submit this form, please consent to being contacted</span>
                     </div>
                     <button type="submit" class="send"  tabindex="0">Submit</button>
                 </form>
@@ -87,7 +90,7 @@
     Message
     T
 
-    To submit this form, please consent to being contacted
+    
 
     Submit
 

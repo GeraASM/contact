@@ -114,6 +114,11 @@ input[type='text'], input[type='email'] {
 
 .over:hover, .over:focus {
     outline: 1px solid var(--clr-grey-600);
+    background-color: var(--clr-white);
+}
+
+#email {
+    background-color: var(--clr-white);
 }
 
 .part-query {
@@ -162,7 +167,7 @@ input[type='radio']:checked {
 
 .part-consent {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: var(--spacing-200);
 }
 
