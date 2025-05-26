@@ -162,7 +162,7 @@ input[type='radio']:checked {
     padding: var(--spacing-150) var(--spacing-300);
     border: 1px solid var(--clr-grey-500);
     border-radius: var(--spacing-100);
-    min-height: 240px;
+    height: 240px;
 }
 
 .part-consent {
@@ -301,5 +301,15 @@ input[type='radio']:checked {
 
     .part-query li {
         flex-grow: 1;
+    }
+
+    #message {
+        max-height: 132px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    #message {
+        max-height: 103px;
     }
 }
